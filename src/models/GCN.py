@@ -4,19 +4,7 @@ import math
 import torch
 from torch.nn.parameter import Parameter
 from torch.nn.modules.module import Module
-import argparse
-import torch.optim as optim
 
-import time
-
-from src.features.build_features import *
-
-
-def accuracy(output, labels):
-    preds = output.max(1)[1].type_as(labels)
-    correct = preds.eq(labels).double()
-    correct = correct.sum()
-    return correct / len(labels)
 
 class GraphConvolution(Module):
     """
@@ -67,43 +55,3 @@ class GCN(nn.Module):
         x = F.dropout(x, self.dropout, training=self.training)
         x = self.gc2(x, adj)
         return F.log_softmax(x, dim=1)
-
-
-
-# Training settings
-def train(epoch):
-    t = time.time()
-    model.train()
-    optimizer.zero_grad()
-    output = model(features, adj)
-
-    print(output.shape, labels.shape)
-
-    loss = nn.CrossEntropyLoss()
-    loss_train = loss(output, labels.type(torch.LongTensor))
-    acc_train = accuracy(output, labels)
-    loss_train.backward()
-    optimizer.step()
-
-
-    loss_val = loss(output, labels.type(torch.LongTensor))
-    acc_val = accuracy(output, labels)
-
-    print('Epoch: {:04d}'.format(epoch+1),
-          'loss_train: {:.4f}'.format(loss_train.item()),
-          'acc_train: {:.4f}'.format(acc_train.item()),
-          'loss_val: {:.4f}'.format(loss_val.item()),
-          'acc_val: {:.4f}'.format(acc_val.item()),
-          'time: {:.4f}s'.format(time.time() - t))
-
-
-def test():
-    model.eval()
-    output = model(features, adj)
-    loss = nn.CrossEntropyLoss()
-    loss_test = loss(output, labels.type(torch.LongTensor))
-    acc_test = accuracy(output, labels)
-
-    print("Test set results:",
-          "loss= {:.4f}".format(loss_test.item()),
-          "accuracy= {:.4f}".format(acc_test.item()))
