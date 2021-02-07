@@ -5,7 +5,14 @@ from src.models.GCN import *
 class GCN_Trainer(object):
     def __init__(self, features, adj, labels):
         #do something
-        self.model = GCN(nfeat=features.shape[1],
+
+        #this is used to help the test set training
+        shape_idx = 1
+        if len(features.shape) == 1:
+            shape_idx = 0
+
+
+        self.model = GCN(nfeat=features.shape[shape_idx],
                         nhid=16,
                         nclass=len(labels.unique()) + 1,
                         dropout=0.5)

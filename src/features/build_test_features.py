@@ -15,7 +15,7 @@ def build_features(data, edges):
 
     labels = np.array(list(data['Rk']))
 
-    X = data.drop(['Tm', 'Rk', 'id'], axis=1).to_numpy()
+    X = data[['Rk', 'id']].to_numpy()
 
     features = torch.Tensor(X)
 
@@ -23,4 +23,4 @@ def build_features(data, edges):
 
     labels = torch.Tensor(labels)
 
-    return features, adj, labels
+    return features, adj, labels   
