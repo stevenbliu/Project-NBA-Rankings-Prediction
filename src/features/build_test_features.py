@@ -2,7 +2,7 @@ import networkx as nx
 import numpy as np
 import torch
 
-def build_features(data, edges):
+def build_test_features(data, edges):
     nodes = list(data['id'])
 
     edge_list = edges.values.tolist()
@@ -23,4 +23,4 @@ def build_features(data, edges):
 
     labels = torch.Tensor(labels)
 
-    return features, adj, labels   
+    return features, adj, labels

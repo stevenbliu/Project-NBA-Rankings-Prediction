@@ -15,7 +15,7 @@ def main(targets):
 
         print("Building test dataset")
 
-        features, adj, labels = build_features(data, edges)
+        features, adj, labels = build_test_features(data, edges)
 
     else:
 
