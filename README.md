@@ -11,6 +11,7 @@
 
 **Basic Parameters**
   Since we are in early stages of developing we only have one parameter of choice and that is [train, test]. This is to distinguish the data being input into the model.
+    
     train: Parameter train will train the model on all available features (181 different features) 
     test: Parameter test will train the model on 2 features (Rank and Id) which is meant to use as an evaluation of how our data is performing
     
