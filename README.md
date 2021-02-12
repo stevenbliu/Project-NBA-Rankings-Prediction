@@ -1,5 +1,8 @@
 # DSC180B_Project
 
+URL: https://sdevinl.github.io/DSC180B_Project/
+
+
 **About:**  
   This repository contains an implementation of a Graph Convolution Network for node classification on an NBA dataset. The goal being able to classify the ranks of NBA teams using player stats and a graph representation of each matchup between teams in a season. 
   
