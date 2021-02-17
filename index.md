@@ -159,6 +159,7 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
+Example:
 ![Jetpacktocat](https://octodex.github.com/images/jetpacktocat.png)
 
 
