@@ -1,5 +1,31 @@
 ## Welcome to Predicting NBA Rankings with GraphSAGE
 
+# Abstract
+  stuff stuff stuff
+# Introduction
+  stuff stuff stuff
+# Methods
+  - method 1
+  - method 2
+  - method 3
+# Results
+  stuff stuff stuff
+# Conclusion
+  stuff stuff stuff
+# Appendix
+
+
+
+
+
+
+
+
+
+
+
+
+
 You can use the [editor on GitHub](https://github.com/sdevinl/DSC180B_Project/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
