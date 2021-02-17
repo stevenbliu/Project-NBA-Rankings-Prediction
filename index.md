@@ -26,6 +26,9 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
+![Jetpacktocat](https://octodex.github.com/images/jetpacktocat.png)
+
+
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Jekyll Themes
