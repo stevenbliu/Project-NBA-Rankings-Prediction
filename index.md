@@ -1,5 +1,5 @@
 ## Welcome to Predicting NBA Rankings with GraphSAGE
-
+(Keep Simple-Scroll-Down website. Pictures, Plots. 'Informal Narrative')
 # Abstract
   The NBA contains many challenges when attempting to make predictions. The
 performance of a team in the NBA is difficult because many things can happen over the
@@ -12,7 +12,7 @@ and the schedule of the teams, we expect to be able to make accurate predictions
 NBA seedings before a season starts.
 
   
-# Introduction
+# Introduction (What is the problem? Why do we care about it? What is our approach? Why is this our approach?)
   The NBA is one of the most popular sports in the U.S. It is the most followed
 sports league on social media with more than 150 million followers. With this many
 people keeping track of sport, we should expect that statistics on the sport will be useful
@@ -46,7 +46,7 @@ will apply the classical Graph Convolutional Network, GCN and GraphSAGE to our
 network.
 
   
-# Methods
+# Methods (Description of our methods on how it is effective, In-Depth explanation depends on target audience, Higher-Level than Report)
   When implementing the traditional GCN, the GCN model is initialized with the
 number of nodes, n, number of hidden layers, l, and the number of classes, c. Inside the
 GCN model, we have the GCN layers which are initialized with an adjacency matrix of
@@ -99,10 +99,10 @@ normalized GCN layer will look like:
 Where W will be replaced with the optimal W, W*. Theoretically, this is an improved
 GCN model and we would expect better performance results.
   - 
-# Results
+# Results (End with Resuls and Impact)
   stuff stuff stuff
   
-# Conclusion
+# Conclusion (What we learned, Biggest Part)
   stuff stuff stuff
   
 # Appendix
