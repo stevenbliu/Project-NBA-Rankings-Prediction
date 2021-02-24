@@ -47,6 +47,9 @@ network.
 
   
 # Methods (Description of our methods on how it is effective, In-Depth explanation depends on target audience, Higher-Level than Report)
+- We decided to use GraphSAGE because it works for its scalability on big data. With GraphSAGE we will be able to use this model to make predictions in other sports that have many more competitors. For example, golf, an individual sport which will have a significant larger number of nodes than team sports.
+
+
   When implementing the traditional GCN, the GCN model is initialized with the
 number of nodes, n, number of hidden layers, l, and the number of classes, c. Inside the
 GCN model, we have the GCN layers which are initialized with an adjacency matrix of
