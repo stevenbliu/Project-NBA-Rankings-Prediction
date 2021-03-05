@@ -1,4 +1,6 @@
-## Welcome to Predicting NBA Rankings with GraphSAGE
+## Predicting NBA Rankings with GraphSAGE
+     Steven Liu
+     Aurelio Barrios
 (Keep Simple-Scroll-Down website. Pictures, Plots. 'Informal Narrative')
 # Abstract
   The NBA contains many challenges when attempting to make predictions. The
@@ -50,90 +52,7 @@ network.
 - We decided to use GraphSAGE because it works for its scalability on big data. With GraphSAGE we will be able to use this model to make predictions in other sports that have many more competitors. For example, golf, an individual sport which will have a significant larger number of nodes than team sports.
 
 
-  When implementing the traditional GCN, the GCN model is initialized with the
-number of nodes, n, number of hidden layers, l, and the number of classes, c. Inside the
-GCN model, we have the GCN layers which are initialized with an adjacency matrix of
-structure of the graph, A and the feature matrix, X. The shape of the adjacency matrix
-should be n x n. Thus the feature matrix would be n x f, where f is the number of
-features. We will use ReLU as the activation function, σ, of these layers and use a
-softmax to make the classification. To train and test the model, we will need to call the
-forward method of the GCN model, which will take an adjacency matrix of node edges,
-and a feature matrix. There is a parameter in the GCN forward method to specify
-whether you want to use Kipf & Welling’s normalization of the adjacency matrix, A, or to
-leave it unnormalized.
-The left formula shows how the layer will be computed without normalizing A, while the
-right shows how it will be computed with normalizing A. The model can use cross
-entropy loss to tune the weight parameters in each GCN layer. In our case, we will use
-a categorical cross entropy loss.
-GraphSAGE will create batches of neighborhoods and aggregate the information from
-these neighborhoods into a new feature matrix. The forward method will take in a batch
-of nodes, b and the depth size, k to develop a neighborhood. The model will then use b
-and k to create a subsample of A, an adjacency matrix that defines the neighborhood of
-every node in batch, b.
-The batch of nodes, b and subsample of A will be then used as input to the GraphSAGE
-aggregators, mean and pooling that can also be specified as a parameter in the forward
-method.
-The mean aggregator layer will output a feature matrix that contains the average
-of neighborhood features. The pooling aggregator layer will output the original feature
-matrix b, concatenated with the pooling of the neighborhood for each node in b. The
-forward algorithm here should return a feature matrix for each node. In order to make
-the algorithm more efficient, we can use matrix multiplication instead of a for loop in line
-3.We will multiply the matrix of the last iteration, h, with A. This results in a matrix that
-contains the sum of the features of every node. We can tweak this updated matrix
-depending on which aggregator we decide to use. What makes the GraphSAGE loss
-function interesting is that it only requires the output of the GraphSAGE model as input.
-The loss function is calculated based on the similarity between the input, thus it doesn’t
-need to know the true label of a node. It is also possible to use stochastic gradient
-descent as the loss function. The parameters that will be tuned are the weights of the
-aggregator layers. In order to implement LPA-GCN, we need to understand the
-implementation of LPA and GCN. We will make the assumption that two connected
-nodes are likely to have the same label, thus it propagates labels iteratively along the
-edges. LPA will require the label distribution for each node, and A.
-These are the two steps of the propagation rule. First we will use the normalized A to
-propagate labels to their numbers. Then we will reset labeled nodes to the initial values.
-When unifying LPA and GCN, we are unable to use Kipf & Welling’s normalization,
-instead we use the one shown in the formula above. Thus when we apply the GCN
-layer to our LPA-GCN model, it will look like:
-With LPA, we can learn the optimal edge weight, A* by minimizing the predicted labels
-of LPA:
-The same can be done to find the optimal weight matrix, W*.
-With A*, we will also be able to find the optimal D, D*. Then our optimized and
-normalized GCN layer will look like:
-Where W will be replaced with the optimal W, W*. Theoretically, this is an improved
-GCN model and we would expect better performance results.
-  - 
-# Results (End with Resuls and Impact)
-  stuff stuff stuff
   
-# Conclusion (What we learned, Biggest Part)
-  stuff stuff stuff
-  
-# Appendix
-Project Proposal Statement
-Sports data can have a structure that can be taken advantage of with graph
-networks. In sports, how well a team performs will vary on the team they are playing
-against. This relationship will be the schedule of a team, which determines which teams
-play which along with how many times they will play each other in a given season. With
-the schedule, we will be able to develop a model that captures the performance of each
-team in their respective match up. With this model, we believe that we will be able to
-deliver higher accuracy when predicting the rankings of a team. It is helpful to be able to
-predict the rankings of a team because it will allow us to determine what teams will
-make it into the playoffs based on previous data. The data we can use to make these
-predictions is from the stats of each player on the team. We will also develop an option
-that allows to simulate trading of players. This way our project will be able to determine
-how much better or worse a team will become after a given trade. It could possibly help
-teams determine whether a trade is good or bad. This would most likely be the primary
-feature we will develop and expected to be used on the website.
-
-
-
-
-
-
-
-
-
-
 
 
 You can use the [editor on GitHub](https://github.com/sdevinl/DSC180B_Project/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
