@@ -1,7 +1,9 @@
 ## Predicting NBA Rankings with Neural Networks
 (Keep Simple-Scroll-Down website. Pictures, Plots. 'Informal Narrative')
 
-![asdsa](https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic01.nyt.com%2Fimages%2F2019%2F10%2F18%2Fus%2Fbaseball-popularity-world-series-promo-1571419113927-copy%2Fbaseball-popularity-world-series-promo-1571419113927-copy-superJumbo-v3.png&imgrefurl=https%3A%2F%2Fwww.nytimes.com%2Finteractive%2F2019%2F10%2F22%2Fsports%2Fbaseball%2Fbaseball-popularity-world-series.html&tbnid=fd7j6HEYNKvahM&vet=12ahUKEwjO6eKx7pzvAhWGkZ4KHTFQDOYQMygBegUIARClAQ..i&docid=NBltKLp11eA3pM&w=1598&h=964&q=nba%20popularity%20usa%202020&ved=2ahUKEwjO6eKx7pzvAhWGkZ4KHTFQDOYQMygBegUIARClAQ)
+![asdsa](https://static01.nyt.com/images/2019/10/18/us/baseball-popularity-world-series-promo-1571419113927-copy/baseball-popularity-world-series-promo-1571419113927-copy-superJumbo-v3.png)
+
+
 
 # Abstract
   The NBA contains many challenges when attempting to make predictions. The
