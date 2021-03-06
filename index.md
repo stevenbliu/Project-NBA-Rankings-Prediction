@@ -1,5 +1,8 @@
-## Welcome to Predicting NBA Rankings with GraphSAGE
+## Predicting NBA Rankings with Neural Networks
 (Keep Simple-Scroll-Down website. Pictures, Plots. 'Informal Narrative')
+
+![asdsa](https://www.google.com/imgres?imgurl=https%3A%2F%2Fstatic01.nyt.com%2Fimages%2F2019%2F10%2F18%2Fus%2Fbaseball-popularity-world-series-promo-1571419113927-copy%2Fbaseball-popularity-world-series-promo-1571419113927-copy-superJumbo-v3.png&imgrefurl=https%3A%2F%2Fwww.nytimes.com%2Finteractive%2F2019%2F10%2F22%2Fsports%2Fbaseball%2Fbaseball-popularity-world-series.html&tbnid=fd7j6HEYNKvahM&vet=12ahUKEwjO6eKx7pzvAhWGkZ4KHTFQDOYQMygBegUIARClAQ..i&docid=NBltKLp11eA3pM&w=1598&h=964&q=nba%20popularity%20usa%202020&ved=2ahUKEwjO6eKx7pzvAhWGkZ4KHTFQDOYQMygBegUIARClAQ)
+
 # Abstract
   The NBA contains many challenges when attempting to make predictions. The
 performance of a team in the NBA is difficult because many things can happen over the
@@ -164,6 +167,7 @@ Syntax highlighted code block
 
 Example:
 ![Jetpacktocat](https://octodex.github.com/images/jetpacktocat.png)
+
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
