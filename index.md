@@ -3,10 +3,10 @@
 (Keep Simple-Scroll-Down website. Pictures, Plots. 'Informal Narrative')
 
 ![viewers](https://cdn3.onlinegrad.syracuse.edu/content/fe1dbccb03e94a6c823c9737e8b5b368/4170_esportsupdate_viewers.jpg)
-- The NBA is one of the most popular sports in the United States with 63 million viewers.
+- The NBA is one of the most popular sports in the United States with **63 million viewers**.
 - The structure of the NBA resembles a graph and thus can be best represented with Graph Neural Networks.
 - Using Graph Neural Networks, we will be able to make predictions of the ranking of each team.
-- We believe that the accuracy of the Graph Neural Network model would be better than the current models.
+- We believe that the accuracy of the Graph Neural Network model would be better than the [_current models_](https://fivethirtyeight.com/features/introducing-raptor-our-new-metric-for-the-modern-nba/).
 
 # Why predict NBA Rankings?
 ![top10](img/top10.png)
@@ -16,7 +16,7 @@ Source: https://watchstadium.com/which-nba-statistics-actually-translate-to-wins
 - Our model will be able to determine the impact of the changes made in a team's ranking. 
 - This can help give direction to where you or your team needs to improve.
 
-# Why Graph Neural Networks?
+# Why Graph Neural Networks (GNNs)?
 ![graph](img/graph.png)
 - Most sports, such as the NBA, we can expect competitors to perform differently depending on who they're up against.
 - The NBA regular season consists of the 81 games, and teams do not play each other the same number of times.
