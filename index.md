@@ -1,4 +1,5 @@
-## Predicting NBA Rankings with Graph Neural Networks
+# Predicting NBA Rankings with Graph Neural Networks
+## by Steven Liu and Aurelio Barrios
 (Keep Simple-Scroll-Down website. Pictures, Plots. 'Informal Narrative')
 
 ![asdsa](https://cdn3.onlinegrad.syracuse.edu/content/fe1dbccb03e94a6c823c9737e8b5b368/4170_esportsupdate_viewers.jpg)
