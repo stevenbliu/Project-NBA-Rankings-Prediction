@@ -64,7 +64,7 @@ Source: https://watchstadium.com/which-nba-statistics-actually-translate-to-wins
    - Instead of outputting labels, we had the model output the probabilities for each label.
    - We then used the probabilities as the ranking for each team.
    - It was a success, still able to obtain good results.
- 4) All the model told us was what accuracy, it is all useless unless we know exactly what teams placed where!
+4) All the model told us was what accuracy, it is all useless unless we know exactly what teams placed where!
     - This required more modification to the model.
     - The aggregators and batching of the model resulted in some shuffling of the data which made it difficult to know which team placed what seed!
     - (Currently working on this)
