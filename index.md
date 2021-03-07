@@ -1,4 +1,4 @@
-# Predicting NBA Rankings with Graph Neural Networks
+#  NBA Rankings with Graph Neural Networks
 ## by Steven Liu and Aurelio Barrios
 (Keep Simple-Scroll-Down website. Pictures, Plots. 'Informal Narrative')
 
@@ -18,7 +18,8 @@
 - The NBA regular season consists of the 81 games, and teams do not play each other the same number of times.
 - This means that the ranking of the team can be influenced by the schedule that their given that season.
 - Incorporating the regular season schedule within our model will allow us to capture the performance of each team with their unique match up.
-- Graph Neural Networks are one of the few models that are able to use this data.
+- You can express the number of times each team plays each other with a weighted graph.
+- This is why Graph Neural Networks work, and they are also one of the few models that can take advantage of this structure.
 
 # How did we do it?
 - 123
