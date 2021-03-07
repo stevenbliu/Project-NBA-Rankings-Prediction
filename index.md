@@ -1,7 +1,12 @@
-## Predicting NBA Rankings with Neural Networks
+## Predicting NBA Rankings with Graph Neural Networks
 (Keep Simple-Scroll-Down website. Pictures, Plots. 'Informal Narrative')
 
-![asdsa](https://static01.nyt.com/images/2019/10/18/us/baseball-popularity-world-series-promo-1571419113927-copy/baseball-popularity-world-series-promo-1571419113927-copy-superJumbo-v3.png)
+![asdsa](https://cdn3.onlinegrad.syracuse.edu/content/fe1dbccb03e94a6c823c9737e8b5b368/4170_esportsupdate_viewers.jpg)
+- The NBA is one of the most popular sports in the United States with 63 million viewers.
+- The structure of the NBA resembles a graph and thus can be best represented with Graph Neural Networks.
+- Using Graph Neural Networks, we will be able to make predictions of the ranking of each team.
+- We believe that the accuracy of the Graph Neural Network model would be better than the current models.
+
 
 
 
@@ -106,7 +111,7 @@ With A*, we will also be able to find the optimal D, D*. Then our optimized and
 normalized GCN layer will look like:
 Where W will be replaced with the optimal W, W*. Theoretically, this is an improved
 GCN model and we would expect better performance results.
-  - 
+  
 # Results (End with Resuls and Impact)
   stuff stuff stuff
   
