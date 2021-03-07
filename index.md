@@ -7,7 +7,20 @@
 - Using Graph Neural Networks, we will be able to make predictions of the ranking of each team.
 - We believe that the accuracy of the Graph Neural Network model would be better than the current models.
 
+# Why predict NBA Rankings?
+- Within sports and the NBA, statistics are crucial because they can tell you how well you are doing and what you are best or worst at. 
+- Our model will be able to determine the impact of the changes made in a team's ranking. 
+- This can help give direction to where you or your team needs to improve.
 
+# Why Graph Nueral Networks?
+- Most sports, such as the NBA, we can expect competitors to perform differently depending on who they're up against.
+- The NBA regular season consists of the 81 games, and teams do not play each other the same number of times.
+- This means that the ranking of the team can be influenced by the schedule that their given that season.
+- Incorporating the regular season schedule within our model will allow us to capture the performance of each team with their unique match up.
+- Graph Neural Networks are one of the few models that are able to use this data.
+
+# How did we do it?
+- 123
 
 
 # Abstract
