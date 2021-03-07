@@ -52,23 +52,23 @@ Source: https://watchstadium.com/which-nba-statistics-actually-translate-to-wins
 
 # Challenges & Solutions
 1) Scraping our own data was difficult. Stats were hidden under an on-hover button, which we couldn't access.
-   - We were able to find a third-party scraper to get the data we needed. Thanks to [a relative link](https://pypi.org/project/basketball-reference-scraper/).
+   - We were able to find a third-party scraper to get the data we needed. Thanks to [https://pypi.org/project/basketball-reference-scraper/)](https://pypi.org/project/basketball-reference-scraper/).
 
-3) We were obtaining extremely low accuracies with the GraphSAGE model.
+2) We were obtaining extremely low accuracies with the GraphSAGE model.
    - We thought our implemenation of GraphSAGE was incorrect, so we decided to use the author's at [https://github.com/twjiang/graphSAGE-pytorch](https://github.com/twjiang/graphSAGE-pytorch). This did not change anything. 
-      - This was mainly due to the model's loss function penalizing wrong predictions too much.
-      - Making predictions that are close to the correct correct seeding should be okay. 
-      - To combat this, instead of the labels being from 1-30 for each team, we decided to make them from 0-1, whether the team made it to the playoffs or not. 
-      - This reduces the influence of the loss function and we were able to obtain good results!
+   - This was mainly due to the model's loss function penalizing wrong predictions too much.
+   - Making predictions that are close to the correct correct seeding should be okay. 
+   - To combat this, instead of the labels being from 1-30 for each team, we decided to make them from 0-1, whether the team made it to the playoffs or not. 
+   - This reduces the influence of the loss function and we were able to obtain good results!
 4) However our goal isn't to predict whether teams make it to the playoffs, it is to predict their actual rankings!
    - To do this, we had to modify the output of the GraphSAGE model.
-      - Instead of outputting labels, we had the model output the probabilities for each label.
-      - We then used the probabilities as the ranking for each team.
-      - It was a success, still able to obtain good results.
+   - Instead of outputting labels, we had the model output the probabilities for each label.
+   - We then used the probabilities as the ranking for each team.
+   - It was a success, still able to obtain good results.
 5) All the model told us was what accuracy, it is all useless unless we know exactly what teams placed where!
-      - This required more modification to the model.
-      - The aggregators and batching of the model resulted in some shuffling of the data which made it difficult to know which team placed what seed!
-      - (Currently working on this)
+   - This required more modification to the model.
+   - The aggregators and batching of the model resulted in some shuffling of the data which made it difficult to know which team placed what seed!
+   - (Currently working on this)
 
 
  
