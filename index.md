@@ -9,10 +9,10 @@
 - We believe that the accuracy of the Graph Neural Network model would be better than the [_current models_](https://fivethirtyeight.com/features/introducing-raptor-our-new-metric-for-the-modern-nba/).
 
 # What's wrong with Prior Work?
-- [**FiveThirtyEight**](https://fivethirtyeight.com/tag/nba/) is a popular analytics website that has their own NBA ranking prediction model. 
+- [**FiveThirtyEight**](https://fivethirtyeight.com/tag/nba/) is a popular analytics website that has their own NBA ranking prediction model called RAPTOR.
 - It specifically mentions that the model doesn't account account for wins and losses of each team.
 - The projection is entirely based on an estimate of each player's future performance based on other similar NBA players.
-- This model doesn't look at the relationship between teams, which is the primary advantage our model will have.
+- RAPTOR doesn't look at the relationship between teams, which is the primary advantage our model will have.
 
 # Why predict NBA Rankings?
 ![top10](img/top10.png)
@@ -34,7 +34,7 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
 # What's our data?
 ![data](https://user-images.githubusercontent.com/45984322/110225932-ecefc080-7e9e-11eb-937d-bed63d1d6786.png)
 - The data we will be using will be **individual player statistics, team rosters, and team schedules from the last 10 seasons**.
-- All the data will be webscraped from https://www.basketball-reference.com/.
+- All the data will be webscraped from [https://www.basketball-reference.com/](https://www.basketball-reference.com/].
 - After webscraping the data, we cannot directly input it into our model.
 - We will need to develop a data pipeline to preprocess it for our Graph Neural Network!
 
