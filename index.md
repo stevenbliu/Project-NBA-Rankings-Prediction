@@ -25,8 +25,23 @@ Source: https://watchstadium.com/which-nba-statistics-actually-translate-to-wins
 - You can express the number of times each team plays each other with a weighted graph.
 - This is why Graph Neural Networks work, and they are also one of the few models that can take advantage of this structure.
 
-# How did we do it?
-- 123
+# What's our data?
+![data](https://user-images.githubusercontent.com/45984322/110225932-ecefc080-7e9e-11eb-937d-bed63d1d6786.png)
+- The data we will be using will be individual player statistics, team rosters, and team schedules from the last 10 seasons.
+- All the data will be webscraped from https://www.basketball-reference.com/.
+- After webscraping the data, we cannot directly input it into our model.
+- We will need to develop a data pipeline to preprocess it for our Graph Neural Network!
+
+# Which Graph Neural Network?
+![image](https://user-images.githubusercontent.com/45984322/110225963-317b5c00-7e9f-11eb-82a4-4eae23767c17.png)
+- There are many GNNs in the field, but the one we will use GraphSAGE.
+
+# Challenges & Solutions
+
+
+# Our Results!
+
+# Conclusion!
 
 
 # Abstract
