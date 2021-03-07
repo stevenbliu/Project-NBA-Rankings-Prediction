@@ -35,6 +35,17 @@ Source: https://watchstadium.com/which-nba-statistics-actually-translate-to-wins
 # Which Graph Neural Network?
 ![image](https://user-images.githubusercontent.com/45984322/110225963-317b5c00-7e9f-11eb-82a4-4eae23767c17.png)
 - There are many GNNs in the field, but the one we will use GraphSAGE.
+- GraphSAGE is a framework for inductive representation learning on large graphs.
+- The steps of GraphSAGE are:
+![image](https://user-images.githubusercontent.com/45984322/110226000-b49cb200-7e9f-11eb-9dd2-579df19259fe.png)
+- There are multiple techniques to aggregate the feature information from neighbors, such as mean, mean-pooling, max-pooling, and sequential.
+- GraphSAGE is scalable to node attributes, thus we will be able to experiment with as many features as we'd like for our player stats.
+- Each node in our graph network will be a team, which will consist of the aggregate of all player stats on the team's roster. 
+- Thus an input of GraphSAGE will require the use of the player statistics and team rosters, the feature matrix.
+- To determine the neighbors of the graph network we will use the team schedules.
+- This will be our second input of GraphSAGE, the adjacency matrix.
+- With this, we can take advantage of all GraphSAGE has to offer!
+
 
 # Challenges & Solutions
 
