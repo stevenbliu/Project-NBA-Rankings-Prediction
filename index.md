@@ -10,6 +10,7 @@
 
 # Why predict NBA Rankings?
 ![top10](img/top10.png)
+- Here, we can see what teams need to achieve to become one of the top 10 teams in the NBA.
 - Within sports and the NBA, statistics are crucial because they can tell you how well you are doing and what you are best or worst at. 
 - Our model will be able to determine the impact of the changes made in a team's ranking. 
 - This can help give direction to where you or your team needs to improve.
