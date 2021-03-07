@@ -9,6 +9,7 @@
 - We believe that the accuracy of the Graph Neural Network model would be better than the current models.
 
 # Why predict NBA Rankings?
+![top10](img/top10.png)
 - Within sports and the NBA, statistics are crucial because they can tell you how well you are doing and what you are best or worst at. 
 - Our model will be able to determine the impact of the changes made in a team's ranking. 
 - This can help give direction to where you or your team needs to improve.
@@ -189,6 +190,8 @@ Syntax highlighted code block
 
 Example:
 ![Jetpacktocat](https://octodex.github.com/images/jetpacktocat.png)
+![top10](img/top10.png)
+
 
 
 
