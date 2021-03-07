@@ -9,7 +9,7 @@
 - We believe that the accuracy of the Graph Neural Network model would be better than the [_current models_](https://fivethirtyeight.com/features/introducing-raptor-our-new-metric-for-the-modern-nba/).
 
 # What's wrong with Prior Work?
-- [*FiveThirtyEight*](https://fivethirtyeight.com/tag/nba/) is a popular analytics website that has their own NBA ranking prediction model. 
+- [**FiveThirtyEight**](https://fivethirtyeight.com/tag/nba/) is a popular analytics website that has their own NBA ranking prediction model. 
 - It specifically mentions that the model doesn't account account for wins and losses of each team.
 - The projection is entirely based on an estimate of each player's future performance based on other similar NBA players.
 - This model doesn't look at the relationship between teams, which is the primary advantage our model will have.
@@ -18,7 +18,7 @@
 ![top10](img/top10.png)
 Source: https://watchstadium.com/which-nba-statistics-actually-translate-to-wins-07-13-2019/
 - Here, we can see what teams need to achieve to become one of the top 10 teams in the NBA.
-- Within sports and the NBA, statistics are crucial because they can tell you how well you are doing and what you are best or worst at. 
+- Within sports and the NBA, **statistics are crucial because they can tell you how well you are doing and what you are best or worst at**. 
 - Our model will be able to determine the impact of the changes made in a team's ranking. 
 - This can help give direction to where you or your team needs to improve.
 
@@ -26,14 +26,14 @@ Source: https://watchstadium.com/which-nba-statistics-actually-translate-to-wins
 ![graph](img/graph.png)
 - Most sports, such as the NBA, we can expect competitors to perform differently depending on who they're up against.
 - The NBA regular season consists of the 81 games, and teams do not play each other the same number of times.
-- This means that the ranking of the team can be influenced by the schedule that their given that season.
+- This means that the **ranking of the team can be influenced by the schedule that their given that season**.
 - Incorporating the regular season schedule within our model will allow us to capture the performance of each team with their unique match up.
 - You can express the number of times each team plays each other with a weighted graph.
 - This is why Graph Neural Networks work, and they are also one of the few models that can take advantage of this structure.
 
 # What's our data?
 ![data](https://user-images.githubusercontent.com/45984322/110225932-ecefc080-7e9e-11eb-937d-bed63d1d6786.png)
-- The data we will be using will be individual player statistics, team rosters, and team schedules from the last 10 seasons.
+- The data we will be using will be **individual player statistics, team rosters, and team schedules from the last 10 seasons**.
 - All the data will be webscraped from https://www.basketball-reference.com/.
 - After webscraping the data, we cannot directly input it into our model.
 - We will need to develop a data pipeline to preprocess it for our Graph Neural Network!
@@ -47,13 +47,13 @@ Source: https://watchstadium.com/which-nba-statistics-actually-translate-to-wins
 - There are multiple techniques to aggregate the feature information from neighbors, such as mean, mean-pooling, max-pooling, and sequential.
 - GraphSAGE is scalable to node attributes, thus we will be able to experiment with as many features as we'd like for our player stats.
 - Each node in our graph network will be a team, which will consist of the aggregate of all player stats on the team's roster. 
-- Thus an input of GraphSAGE will require the use of the player statistics and team rosters, the feature matrix.
-- To determine the neighbors of the graph network we will use the team schedules.
+- Thus an input of GraphSAGE will require the use of the **player statistics** and **team rosters**, the feature matrix.
+- To determine the neighbors of the graph network we will use the **team schedules**.
 - This will be our second input of GraphSAGE, the adjacency matrix.
 - With this, we can take advantage of all GraphSAGE has to offer!
 
 # What are we doing?
-- We will be inputting player stats, team rosters, and team schedules into our GraphSAGE model to output the ranking for each team.
+- **We will be inputting player stats, team rosters, and team schedules into our GraphSAGE model to output the ranking for each team.**
 
 
 # Challenges & Solutions
