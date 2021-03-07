@@ -51,8 +51,14 @@ Source: https://watchstadium.com/which-nba-statistics-actually-translate-to-wins
 
 
 # Challenges & Solutions
-1) Scraping our own data was difficult. Stats were hidden under an on-hover button, which we couldn't access.
-   - We were able to find a third-party scraper to get the data we needed. Thanks to https://pypi.org/project/basketball-reference-scraper/.
+1) Scraping our own data was difficult. Stats were hidden under an on-hover button, which we couldn't access.   - We were able to find a third-party scraper to get the data we needed. Thanks to [a relative link](https://pypi.org/project/basketball-reference-scraper/).
+
+2) asdas    - We were able to find a third-party scraper to get the data we needed. Thanks to [a relative link](https://pypi.org/project/basketball-reference-scraper/).
+   - We were able to find a third-party scraper to get the data we needed. Thanks to [a relative link](https://pypi.org/project/basketball-reference-scraper/).
+
+3) asdsa
+4) asdsa
+5) asdsa
 2) We were obtaining extremely low accuracies with the GraphSAGE model.
    - We thought our implemenation of GraphSAGE was incorrect, so we decided to use the author's at https://github.com/twjiang/graphSAGE-pytorch. This did not change anything. 
    - This was mainly due to the model's loss function penalizing wrong predictions too much.
