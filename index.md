@@ -60,12 +60,13 @@ Source: https://watchstadium.com/which-nba-statistics-actually-translate-to-wins
    - Making predictions that are close to the correct correct seeding should be okay. 
    - To combat this, instead of the labels being from 1-30 for each team, we decided to make them from 0-1, whether the team made it to the playoffs or not. 
    - This reduces the influence of the loss function and we were able to obtain good results!
-4) However our goal isn't to predict whether teams make it to the playoffs, it is to predict their actual rankings!
+ 
+3) However our goal isn't to predict whether teams make it to the playoffs, it is to predict their actual rankings!
    - To do this, we had to modify the output of the GraphSAGE model.
    - Instead of outputting labels, we had the model output the probabilities for each label.
    - We then used the probabilities as the ranking for each team.
    - It was a success, still able to obtain good results.
-5) All the model told us was what accuracy, it is all useless unless we know exactly what teams placed where!
+4) All the model told us was what accuracy, it is all useless unless we know exactly what teams placed where!
    - This required more modification to the model.
    - The aggregators and batching of the model resulted in some shuffling of the data which made it difficult to know which team placed what seed!
    - (Currently working on this)
