@@ -54,6 +54,7 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
 
 # What are we doing?
 - **We will be inputting player stats, team rosters, and team schedules into our GraphSAGE model to output the ranking for each team.**
+- The model will use NBA data from seasons 2010-2018 to predict the rankings of 2019.
 
 
 # Challenges & Solutions
@@ -73,18 +74,19 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
    - We then used the probabilities as the ranking for each team.
    - It was a success, still able to obtain good results.
    
-4) All the model told us was what accuracy, it is all useless unless we know exactly what teams placed where!
-   - This required more modification to the model.
-   - The aggregators and batching of the model resulted in some shuffling of the data which made it difficult to know which team placed what seed!
-   - (Currently working on this)
+4) All the model told us was what accuracy, it is all useless unless we know exactly what teams placed where.
+   - The model outputs the data exactly how it is inputted.
+   - If we join the input and output by index, we will have the correct teams for each probability. Solved.
+   
+5) ?
 
 
 
 
 # Our Results!
-( Many plots with accuracies and comparisons to other model and aggregators coming!)
+This section will contain the results using **10 seasons of data** to predict the NBA Rankings of teams in **2019**.
 
-<p align="center"> Model Test Accuracies </p>
+<p align="center"> <b>Model Test Accuracies 100 Epochs</b> </p>
 
 
 :-------------------------:|:-------------------------:
@@ -92,7 +94,7 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
 ![](results/rawSageMaxPoolTable.png)  |  ![](results/rawSageMeanPoolTable.png)
 ![](results/rawSageMeanTable.png)  |  ![]()
 
-
+Probability 
 
 
   <p align="center"> Model Loss </p>
