@@ -1,6 +1,5 @@
 #  NBA Rankings with Graph Neural Networks
 ## by Steven Liu and Aurelio Barrios
-(Keep Simple-Scroll-Down website. Pictures, Plots. 'Informal Narrative')
 
 ![viewers](https://cdn3.onlinegrad.syracuse.edu/content/fe1dbccb03e94a6c823c9737e8b5b368/4170_esportsupdate_viewers.jpg)
 - The NBA is one of the most popular sports in the United States with **63 million viewers**.
@@ -10,7 +9,7 @@
 
 # What's wrong with Prior Work?
 - [**FiveThirtyEight**](https://fivethirtyeight.com/tag/nba/) is a popular analytics website that has their own NBA ranking prediction model called RAPTOR.
-- It specifically mentions that the model doesn't account account for wins and losses of each team.
+- It specifically mentions that the model doesn't account for wins and losses of each team.
 - The projection is entirely based on an estimate of each player's future performance based on other similar NBA players.
 - RAPTOR doesn't look at the relationship between teams, which is the primary advantage our model will have.
 
@@ -35,11 +34,11 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
 ![data](https://user-images.githubusercontent.com/45984322/110225932-ecefc080-7e9e-11eb-937d-bed63d1d6786.png)
 - The data we will be using will be **individual player statistics, team rosters, and team schedules from the last 10 seasons**.
 - All the data will be webscraped from [https://www.basketball-reference.com/](https://www.basketball-reference.com/].
-- After webscraping the data, we cannot directly input it into our model.
+- After web scraping the data, we cannot directly input it into our model.
 - We will need to develop a data pipeline to preprocess it for our Graph Neural Network!
 
 # Which Graph Neural Network?
-- There are many GNNs in the field, but the one we will use GraphSAGE.
+- There are many GNNs in the field, but the one we will use is GraphSAGE.
 - GraphSAGE is a framework for inductive representation learning on large graphs.
 - The steps of GraphSAGE are:
 ![image](https://user-images.githubusercontent.com/45984322/110226000-b49cb200-7e9f-11eb-9dd2-579df19259fe.png)
@@ -61,9 +60,9 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
    - We were able to find a third-party scraper to get the data we needed. Thanks to [https://pypi.org/project/basketball-reference-scraper/)](https://pypi.org/project/basketball-reference-scraper/).
 
 2) We were obtaining extremely low accuracies with the GraphSAGE model.
-   - We thought our implemenation of GraphSAGE was incorrect, so we decided to use the author's at [https://github.com/twjiang/graphSAGE-pytorch](https://github.com/twjiang/graphSAGE-pytorch). This did not change anything. 
+   - We thought our implementation of GraphSAGE was incorrect, so we decided to use the author's at [https://github.com/twjiang/graphSAGE-pytorch](https://github.com/twjiang/graphSAGE-pytorch). This did not change anything. 
    - This was mainly due to the model's loss function penalizing wrong predictions too much.
-   - Making predictions that are close to the correct correct seeding should be okay. 
+   - Making predictions that are close to the correct seeding should be okay. 
    - To combat this, instead of the labels being from 1-30 for each team, we decided to make them from 0-1, whether the team made it to the playoffs or not. 
    - This reduces the influence of the loss function and we were able to obtain good results!
  
@@ -73,7 +72,7 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
    - We then used the probabilities as the ranking for each team.
    - It was a success, still able to obtain good results.
    
-4) All the model told us was what accuracy, it is all useless unless we know exactly what teams placed where.
+4) All the model told us was what accuracy, it is all useless unless we know exactly what teams were placed where.
    - The model outputs the data exactly how it is inputted.
    - If we join the input and output by index, we will have the correct teams for each probability. Solved.
    
@@ -111,11 +110,13 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
 
   ![Loss](results/seasonExperiments.png)
   
-  - Assuming that the rankings of the teams have a drastic change every 5 or so years, we wanted to see how many seasons should we include when training. 
-  - For validating as well because the we believe that the most recent years of the NBA would be the most important for our model!
+  - Assuming that the rankings of the teams have a drastic change every 5 or so years, we wanted to see how many seasons we should include when training. 
+  - For validating as well because we believe that the most recent years of the NBA would be the most important for our model!
   - It seems that the **more number of seasons in training, the better our test accuracy** will be.
 
 # Conclusion!
    To conclude, we were able to develop a model that can produce predictions of the NBA Rankings with 80% accuracy. This means that there will be around 6 teams that would be misranked. We are satisfied with our accuracy, but there is definitely further research that can be done to improve the model. As stated earlier, the validation seasons are crucial to the test set, but when using them as our validation, we weren't able to use them in our training. Incorporating the validation seasons into the training would be extremely helpful. We have not been able to test the full effects of the aggregators as they take a long time to run, it is possible to obtain better results with these aggregators after applying the changes. 
    
 # Thanks for reading!
+
+
