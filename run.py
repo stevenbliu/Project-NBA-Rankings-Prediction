@@ -1,31 +1,15 @@
 
-from src.models.GCN_Trainer import *
-from src.data.make_dataset import *
-from src.features.build_features import *
-from src.features.build_test_features import *
+from graphsage.utils import load_data
+from graphsage.supervised_train import train
 
 import sys
 
 
 def main(targets):
 
-    data, edges = make_data()
+    train_data = load_data('data/sage_NBA/nba')
 
-    if targets and targets[0] == 'test':
-
-        print("Building test dataset")
-
-        features, adj, labels = build_test_features(data, edges)
-
-    else:
-
-        features, adj, labels = build_features(data, edges)
-
-    trainer = GCN_Trainer(features, adj, labels)
-
-    trainer.complete_train()
-
-
+    train(train_data)
 
 if __name__ == '__main__':
 
