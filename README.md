@@ -35,3 +35,9 @@ URL: https://sdevinl.github.io/DSC180B_Project/
   
 **Output**  
   Direct terminal output outlining the training, validation and test accuracies of our model.  
+  In the sage_outputs folder you will find files that contain data on the model:
+  	The rawOutputs folder contains a json file that includes the raw output probabilites of our NBA test set.
+	The stats folder will contain all accuracies and losses captured whilst training your model.
+	
+**Acknowledgements**
+  As mentioned in the disclaimer the original version of this code can be found here https://github.com/williamleif/GraphSAGE. An appreciation to the original creators of this code and a thank you for allowing this code to be available and ready to use on projects such as ours. 
