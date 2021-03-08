@@ -87,8 +87,8 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
 
 :-------------------------:|:-------------------------:
 ![](results/rawGCNTable.png)  |  ![](results/rawSeqTable.png)
-![](results/rawMaxPoolable.png)  |  ![](results/rawMeanPoolTable.png)
-![](results/rawMeanTable.png)  |  ![]()
+![](results/rawSageMaxPoolTable.png)  |  ![](results/rawSageMeanPoolTable.png)
+![](results/rawSageMeanTable.png)  |  ![]()
 
 
 
