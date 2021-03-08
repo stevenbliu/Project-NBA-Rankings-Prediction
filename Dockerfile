@@ -1,14 +1,6 @@
+FROM tensorflow/tensorflow:1.3.0
 
-ARG BASE_CONTAINER=ucsdets/scipy-ml-notebook:2020.2-stable
+RUN pip install networkx==1.11
+RUN rm /notebooks/*
 
-FROM $BASE_CONTAINER
-
-LABEL maintainer="UC San Diego ITS/ETS <ets-consult@ucsd.edu>"
-
-#change root to install packages
-USER root
-
-RUN pip install networkx 
-
-RUN pip install torch
-
+COPY . /notebooks

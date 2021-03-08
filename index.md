@@ -66,13 +66,13 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
    - To combat this, instead of the labels being from 1-30 for each team, we decided to make them from 0-1, whether the team made it to the playoffs or not. 
    - This reduces the influence of the loss function and we were able to obtain good results!
  
-3) Our goal isn't to predict whether teams make it to the playoffs, it is to predict their actual rankings!
+3) However our goal isn't to predict whether teams make it to the playoffs, it is to predict their actual rankings!
    - To do this, we had to modify the output of the GraphSAGE model.
    - Instead of outputting labels, we had the model output the probabilities for each label.
    - We then used the probabilities as the ranking for each team.
    - It was a success, still able to obtain good results.
    
-4) All the model told us was what accuracy, it is all useless unless where each team ranked.
+4) All the model told us was what accuracy, it is all useless unless we know exactly what teams were placed where.
    - The model outputs the data exactly how it is inputted.
    - If we join the input and output by index, we will have the correct teams for each probability. Solved.
    
