@@ -39,5 +39,5 @@ URL: https://sdevinl.github.io/DSC180B_Project/
   	The rawOutputs folder contains a json file that includes the raw output probabilites of our NBA test set.
 	The stats folder will contain all accuracies and losses captured whilst training your model.
 	
-**Acknowledgements**
+**Acknowledgements**   
   As mentioned in the disclaimer the original version of this code can be found here https://github.com/williamleif/GraphSAGE. An appreciation to the original creators of this code and a thank you for allowing this code to be available and ready to use on projects such as ours. 
