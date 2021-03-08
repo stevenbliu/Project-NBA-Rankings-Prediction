@@ -23,6 +23,7 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
 - This can help give direction to where you or your team needs to improve.
 
 # Why Graph Neural Networks (GNNs)?
+ <div style="text-align:center"><img src="img/graph.png" /></div>
 - Most sports, such as the NBA, we can expect competitors to perform differently depending on who they're up against.
 - The NBA regular season consists of the 81 games, and teams do not play each other the same number of times.
 - This means that the **ranking of the team can be influenced by the schedule that their given that season**.
@@ -38,7 +39,6 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
 - We will need to develop a data pipeline to preprocess it for our Graph Neural Network!
 
 # Which Graph Neural Network?
-![image](https://user-images.githubusercontent.com/45984322/110225963-317b5c00-7e9f-11eb-82a4-4eae23767c17.png)
 - There are many GNNs in the field, but the one we will use GraphSAGE.
 - GraphSAGE is a framework for inductive representation learning on large graphs.
 - The steps of GraphSAGE are:
