@@ -84,7 +84,7 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
 # Our Results!
 ( Many plots with accuracies and comparisons to other model and aggregators coming!)
 
-<p align="center"> Models </p>
+<p align="center"> Model Test Accuracies </p>
 
 
 :-------------------------:|:-------------------------:
@@ -95,8 +95,17 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
 
 
 
-   
+  <p align="center"> Model Loss </p>
+
   ![Loss](results/resultsModelsLoss.png)
+  
+  <p align="center"> Model Accuracy </p>
+
+  ![Loss](results/resultsModelsAcc.png)
+  
+  <p align="center"> # of Training Seasons Performance </p>
+
+  ![Loss](results/seasonExperiments.png)
 
 # Conclusion!
    (Waiting for Results)
