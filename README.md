@@ -29,8 +29,9 @@ URL: https://sdevinl.github.io/DSC180B_Project/
     
 **Examples run.py**  
   python run.py test  
-  python run.py train  
   python run.py  
+  
+  The run.py file will run a graphsage model with the mean aggregator on our NBA data. For more information on how to change the overall model or change the parameters of a model refer to the original graphsage implementation.
   
 **Output**  
   Direct terminal output outlining the training, validation and test accuracies of our model.  
