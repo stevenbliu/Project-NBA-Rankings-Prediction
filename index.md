@@ -117,3 +117,5 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
 
 # Conclusion!
    To conclude, we were able to develop a model that can produce predictions of the NBA Rankings with 80% accuracy. This means that there will be around 6 teams that would be misranked. We are satisfied with our accuracy, but there is definitely further research that can be done to improve the model. As stated earlier, the validation seasons are crucial to the test set, but when using them as our validation, we weren't able to use them in our training. Incorporating the validation seasons into the training would be extremely helpful. We have not been able to test the full effects of the aggregators as they take a long time to run, it is possible to obtain better results with these aggregators after applying the changes. 
+   
+# Thanks for reading!
