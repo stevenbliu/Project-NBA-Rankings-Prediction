@@ -84,7 +84,8 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
 
 
 # Our Results!
-This section will contain the results using **10 seasons of data** to predict the NBA Rankings of teams in **2019**.
+- This section contains the results using **10 NBA seasons** to predict the rankings of teams in **2019**.
+- It will **compare the performances of each GraphSAGE aggregator** as well the traditional Graph Convolutional Network as a benchmark.
 
 <p align="center"> <b>Model Test Accuracies 100 Epochs</b> </p>
 
@@ -92,9 +93,11 @@ This section will contain the results using **10 seasons of data** to predict th
 :-------------------------:|:-------------------------:
 ![](results/rawGCNTable.png)  |  ![](results/rawSeqTable.png)
 ![](results/rawSageMaxPoolTable.png)  |  ![](results/rawSageMeanPoolTable.png)
-![](results/rawSageMeanTable.png)  |  ![]()
+![](results/rawSageMeanTable.png)  |  - 213213
+- 213213 
+- 3213123
 
-Probability 
+
 
 
   <p align="center"> Model Loss </p>
