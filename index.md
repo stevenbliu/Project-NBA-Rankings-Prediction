@@ -23,7 +23,6 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
 - This can help give direction to where you or your team needs to improve.
 
 # Why Graph Neural Networks (GNNs)?
-![graph](img/graph.png)
 - Most sports, such as the NBA, we can expect competitors to perform differently depending on who they're up against.
 - The NBA regular season consists of the 81 games, and teams do not play each other the same number of times.
 - This means that the **ranking of the team can be influenced by the schedule that their given that season**.
@@ -78,10 +77,6 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
    - The model outputs the data exactly how it is inputted.
    - If we join the input and output by index, we will have the correct teams for each probability. Solved.
    
-5) ?
-
-
-
 
 # Our Results!
 - This section contains the results using **10 NBA seasons** to predict the rankings of teams in **2019**.
@@ -97,7 +92,7 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
 
  - We can see that GraphSAGE is able to obtain better accuracies than the traditional GCN.
  - Looking deeper, we can see that the best aggregator for our model would be the mean.
- - The model is able to obtain 80% accuracy with room for improvement which will be discussed in the conclusion.
+ - The model is able to obtain **80% accuracy with room for improvement** which will be discussed in the conclusion.
 
 
   <p align="center"> <b> Model Loss </b> </p>
@@ -109,8 +104,8 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
 
   ![Loss](results/resultsModelsAcc.png)
   
-  - By analyzing both the model accuracies and losses across the epochs, we were able to determine how effect well the mode is learning.
-  - It gives us an idea of whether the loss function is a problem, and is how we knew that we needed binary labels.
+  - By analyzing both the model accuracies and losses across the epochs, we were able to determine how effective the model is learning.
+  - It gives us an idea of whether the loss function is a problem which **helped us discover that we needed to make our labels binary**.
 
   <p align="center"> <b> # of Training Seasons Performance </b> </p>
 
@@ -118,7 +113,7 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
   
   - Assuming that the rankings of the teams have a drastic change every 5 or so years, we wanted to see how many seasons should we include when training. 
   - For validating as well because the we believe that the most recent years of the NBA would be the most important for our model!
-  - It seems that the more number of seasons in training, the better our test accuracy will be.
+  - It seems that the **more number of seasons in training, the better our test accuracy** will be.
 
 # Conclusion!
-   (Waiting for Results)
+   To conclude, we were able to develop a model that can produce predictions of the NBA Rankings with 80% accuracy. This means that there will be around 6 teams that would be misranked. We are satisfied with our accuracy, but there is definitely further research that can be done to improve the model. As stated earlier, the validation seasons are crucial to the test set, but when using them as our validation, we weren't able to use them in our training. Incorporating the validation seasons into the training would be extremely helpful. We have not been able to test the full effects of the aggregators as they take a long time to run, it is possible to obtain better results with these aggregators after applying the changes. 
