@@ -2,12 +2,22 @@
 
 URL: https://sdevinl.github.io/DSC180B_Project/
 
+**Disclaimer**
+  We want to make it clear that the graphsage implentation found in this repo is not our own. We have made minor alterations to the code in order to better serve our overall project in regards to NBA team rankings. The original graphsage implementation can be found here https://github.com/williamleif/GraphSAGE . We would also like to cite their paper:
+  
+     @inproceedings{hamilton2017inductive,
+	     author = {Hamilton, William L. and Ying, Rex and Leskovec, Jure},
+	     title = {Inductive Representation Learning on Large Graphs},
+	     booktitle = {NIPS},
+	     year = {2017}
+	   }
+  For more information on how to run graphsage as well as the requirements for grapshage be sure to checkout the original graphsage's implementation.
 
 **About:**  
   This repository contains an implementation of a GraphSAGE for node classification on an NBA dataset. The goal being able to classify the ranks of NBA teams using player stats and a graph representation of matchups between teams in a season. 
   
 **Setting Up Docker Image**  
-  The docker image that was created in order to have an environment able to run this project is found on the repo at https://hub.docker.com/layers/aubarrio/q2checkpoint/latest/images/sha256:cbf58731b23a77bbdbc378934d197965bb54b258c1848c3a68abaff80edb78c5 Or it can be found at aubarrio/q2checkpoint:latest  
+  The docker image that was created in order to have an environment able to run this project is found on the repo at aubarrio/graphsage . 
     
 **Model**  
   data: The data we use in this project is a compound of multiple webscraped data found on https://www.basketball-reference.com we used stats such as player and team stats, along with team schedules for the season. The seasons for which we collected data range from 2011 to the 2019 season.  
