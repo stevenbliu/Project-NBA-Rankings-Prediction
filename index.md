@@ -93,25 +93,32 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
 :-------------------------:|:-------------------------:
 ![](results/rawGCNTable.png)  |  ![](results/rawSeqTable.png)
 ![](results/rawSageMaxPoolTable.png)  |  ![](results/rawSageMeanPoolTable.png)
-![](results/rawSageMeanTable.png)  |  ![]()
+![](results/rawSageMeanTable.png)  |  ![](results/tableDescript.png)
+
+ - We can see that GraphSAGE is able to obtain better accuracies than the traditional GCN.
+ - Looking deeper, we can see that the best aggregator for our model would be the mean.
+ - The model is able to obtain 80% accuracy with room for improvement which will be discussed in the conclusion.
 
 
-
-
-
-
-
-  <p align="center"> Model Loss </p>
+  <p align="center"> <b> Model Loss </b> </p>
 
   ![Loss](results/resultsModelsLoss.png)
   
-  <p align="center"> Model Accuracy </p>
+  
+  <p align="center"> <b> Model Accuracy </b> </p>
 
   ![Loss](results/resultsModelsAcc.png)
   
-  <p align="center"> # of Training Seasons Performance </p>
+  - By analyzing both the model accuracies and losses across the epochs, we were able to determine how effect well the mode is learning.
+  - It gives us an idea of whether the loss function is a problem, and is how we knew that we needed binary labels.
+
+  <p align="center"> <b> # of Training Seasons Performance </b> </p>
 
   ![Loss](results/seasonExperiments.png)
+  
+  - Assuming that the rankings of the teams have a drastic change every 5 or so years, we wanted to see how many seasons should we include when training. 
+  - For validating as well because the we believe that the most recent years of the NBA would be the most important for our model!
+  - It seems that the more number of seasons in training, the better our test accuracy will be.
 
 # Conclusion!
    (Waiting for Results)
