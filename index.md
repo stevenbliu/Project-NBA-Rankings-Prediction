@@ -93,9 +93,10 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
 :-------------------------:|:-------------------------:
 ![](results/rawGCNTable.png)  |  ![](results/rawSeqTable.png)
 ![](results/rawSageMaxPoolTable.png)  |  ![](results/rawSageMeanPoolTable.png)
-![](results/rawSageMeanTable.png)  |  - 213213
-- 213213 
-- 3213123
+![](results/rawSageMeanTable.png)  |  ![]()
+
+
+
 
 
 
