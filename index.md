@@ -85,7 +85,7 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
    ( Many plots with accuracies and comparisons to other model and aggregators coming!)
    Solarized dark             |  Solarized Ocean
 :-------------------------:|:-------------------------:
-![](https://...Dark.png)  |  ![](https://...Ocean.png)
+![](https://user-images.githubusercontent.com/45984322/110226000-b49cb200-7e9f-11eb-9dd2-579df19259fe.png)  |  ![](https://user-images.githubusercontent.com/45984322/110226000-b49cb200-7e9f-11eb-9dd2-579df19259fe.png)
    
   ![Loss](results/resultsModelsLoss.png)
 
