@@ -33,7 +33,7 @@ Source: [https://watchstadium.com/which-nba-statistics-actually-translate-to-win
 # What's our data?
 ![data](https://user-images.githubusercontent.com/45984322/110225932-ecefc080-7e9e-11eb-937d-bed63d1d6786.png)
 - The data we will be using will be **individual player statistics, team rosters, and team schedules from the last 10 seasons**.
-- All the data will be webscraped from ![https://www.basketball-reference.com/](https://www.basketball-reference.com/].
+- All the data will be webscraped from [https://www.basketball-reference.com/](https://www.basketball-reference.com/]).
 - After web scraping the data, we cannot directly input it into our model.
 - We will need to develop a data pipeline to preprocess it for our Graph Neural Network!
 
