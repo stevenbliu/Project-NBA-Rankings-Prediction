@@ -1,6 +1,6 @@
 # DSC180B_Project
 
-URL: https://sdevinl.github.io/DSC180B_Project/
+URL: https://sdevinl.github.io/DSC180B_Project-NBA-Rankings-Prediction/
 
 **Disclaimer:**   
   We want to make it clear that the graphsage implentation found in this repo is not our own. We have made minor alterations to the code in order to better serve our overall project in regards to NBA team rankings. The original graphsage implementation can be found here https://github.com/williamleif/GraphSAGE . We would also like to cite their paper:
