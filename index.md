@@ -1,7 +1,6 @@
 #  NBA Rankings with Graph Neural Networks
 ## by Steven Liu and Aurelio Barrios
 
-![viewers](https://www.google.com/imgres?imgurl=https%3A%2F%2Fcontentstorage-nax1.emarketer.com%2Fbe9043834c851b024801c01eb8c6d76d%2F243310&imgrefurl=https%3A%2F%2Fwww.emarketer.com%2Fcontent%2Fhow-the-nba-is-using-esports-to-grow-its-audience&tbnid=xnpBLj3w4kJZ5M&vet=12ahUKEwjjwr2PoNzxAhURqZ4KHeKaBoQQMygDegUIARC4AQ..i&docid=h8fwYvtGejT31M&w=470&h=283&itg=1&q=viewers%20nba%20vs%20other%20spors&ved=2ahUKEwjjwr2PoNzxAhURqZ4KHeKaBoQQMygDegUIARC4AQ)
 - The NBA is one of the most popular sports in the United States with **63 million viewers**.
 - The structure of the NBA resembles a graph and thus can be best represented with Graph Neural Networks.
 - Using Graph Neural Networks, we will be able to make predictions of the ranking of each team.
