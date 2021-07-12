@@ -1,5 +1,3 @@
-# DSC180B_Project
-
 URL: https://sdevinl.github.io/Project-NBA-Rankings-Prediction/
 
 **Disclaimer:**   
